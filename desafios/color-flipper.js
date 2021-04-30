@@ -1,11 +1,12 @@
 const colorFlipper = () => {
   const mainContent = document.querySelector('main.main-content');
 
-  const colorFlipperContent = document.createElement('div');
+  const colorFlipperContent = document.createElement('section');
   const btn = document.createElement('button');
 
   colorFlipperContent.id = 'color-flipper';
   colorFlipperContent.style.minHeight = '10rem';
+  colorFlipperContent.style.border = '1rem solid black';
   colorFlipperContent.style.display = 'grid';
   colorFlipperContent.style.placeContent = 'center';
 
