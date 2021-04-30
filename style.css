@@ -1,0 +1,49 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: black;
+}
+
+main.main-content {
+  background-color: cadetblue;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+}
+
+h1 {
+  text-align: center;
+  line-height: 4rem;
+  color: white;
+}
+
+ul {
+  text-align: center;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+li {
+  list-style: none;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
