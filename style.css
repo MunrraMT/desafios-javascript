@@ -10,11 +10,11 @@ body {
   width: 100vw;
   height: 100vh;
 
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 
 main.main-content {
-  background-color: cadetblue;
+  background-color: rgb(255, 255, 255);
 }
 
 header {
