@@ -17,33 +17,33 @@ main.main-content {
   background-color: rgb(255, 255, 255);
 }
 
-header {
+header.menu__header {
   width: 100vw;
   height: 100vh;
 
   display: grid;
 }
 
-h1 {
+h1.menu__title {
   text-align: center;
   line-height: 4rem;
   color: white;
 }
 
-ul {
+ul.menu__list {
   text-align: center;
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
 
-li {
+li.menu__item {
   list-style: none;
   text-transform: uppercase;
   line-height: 2.5rem;
 }
 
-a {
+a.menu__link {
   text-decoration: none;
   color: white;
 }
