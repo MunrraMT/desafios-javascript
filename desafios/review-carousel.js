@@ -55,7 +55,7 @@ const reviewCarousel = () => {
   function slider(direction) {
     if (direction === 'previous') {
       count--;
-      if (count <= 0) count = reviews.length - 1;
+      if (count < 0) count = reviews.length - 1;
     }
 
     if (direction === 'next') {
