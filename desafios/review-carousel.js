@@ -2,6 +2,7 @@ const reviewCarousel = () => {
   const mainContent = document.querySelector('main.main-content');
 
   const reviewCarouselContent = document.createElement('section');
+  const h2 = document.createElement('h2');
   const section = document.createElement('section');
   const footer = document.createElement('footer');
   const previous = document.createElement('button');
@@ -27,6 +28,11 @@ const reviewCarousel = () => {
   section.id = 'review-content';
   section.style.display = 'grid';
   section.style.placeContent = 'center';
+  section.style.textAlign = 'center';
+
+  h2.textContent = 'Review Carousel';
+  h2.style.textAlign = 'center';
+  h2.style.paddingBottom = '1rem';
 
   footer.style.width = '80vw';
   footer.style.padding = '1rem';
@@ -45,7 +51,7 @@ const reviewCarousel = () => {
 
     article.id = `review-${reviews[count].id}`;
     article.innerHTML = `
-      <h2>${reviews[count].titulo}</h2>
+      <h3>${reviews[count].titulo}</h3>
       <p>${reviews[count].conteudo}</p>
     `;
 
@@ -81,6 +87,7 @@ const reviewCarousel = () => {
   footer.appendChild(previous);
   footer.appendChild(next);
   section.appendChild(article(0));
+  reviewCarouselContent.appendChild(h2);
   reviewCarouselContent.appendChild(section);
   reviewCarouselContent.appendChild(footer);
   mainContent.appendChild(reviewCarouselContent);
