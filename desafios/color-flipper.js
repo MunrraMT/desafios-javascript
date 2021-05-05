@@ -12,6 +12,7 @@ const colorFlipper = () => {
 
   btn.textContent = 'Color Flipper';
   btn.style.fontSize = '1.25rem';
+  btn.style.cursor = 'pointer';
 
   const randomNumber = () => {
     return Math.floor(Math.random() * (255 - 0)) + 0;

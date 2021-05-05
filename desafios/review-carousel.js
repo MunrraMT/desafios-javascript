@@ -42,9 +42,11 @@ const reviewCarousel = () => {
 
   previous.textContent = 'Previous';
   previous.style.fontSize = '1.2rem';
+  previous.style.cursor = 'pointer';
 
   next.textContent = 'Next';
   next.style.fontSize = '1.2rem';
+  next.style.cursor = 'pointer';
 
   function article() {
     const article = document.createElement('article');

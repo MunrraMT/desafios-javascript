@@ -13,6 +13,7 @@ const responsiveNavbar = () => {
 
   btn.textContent = 'Abrir Título';
   btn.style.display = 'block';
+  btn.style.cursor = 'pointer';
 
   h2.textContent = 'Responsive Navbar';
   h2.style.textAlign = 'Center';

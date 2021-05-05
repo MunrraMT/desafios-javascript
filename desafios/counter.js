@@ -13,6 +13,7 @@ const counter = () => {
 
   btn.textContent = 'Counter';
   btn.style.fontSize = '1.25rem';
+  btn.style.cursor = 'pointer';
 
   h2.textContent = 0;
   h2.style.textAlign = 'center';

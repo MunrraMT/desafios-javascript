@@ -1,4 +1,4 @@
-const responsiveNavbar = () => {
+const sideBar = () => {
   const mainContent = document.querySelector('main.main-content');
 
   const responsiveNavbarContent = document.createElement('section');
@@ -6,14 +6,15 @@ const responsiveNavbar = () => {
   const sideBar = document.createElement('aside');
   const h2 = document.createElement('h2');
 
-  responsiveNavbarContent.id = 'responsive-navbar';
+  responsiveNavbarContent.id = 'sidebar';
   responsiveNavbarContent.style.minHeight = '10rem';
   responsiveNavbarContent.style.border = '1rem solid black';
   responsiveNavbarContent.style.display = 'grid';
   responsiveNavbarContent.style.placeContent = 'center';
   responsiveNavbarContent.style.position = 'relative';
 
-  btn.textContent = 'Abrir Título';
+  btn.textContent = 'Abrir SideBar';
+  btn.style.cursor = 'pointer';
 
   h2.textContent = 'SideBar';
   h2.style.textAlign = 'Center';
@@ -49,4 +50,4 @@ const responsiveNavbar = () => {
   mainContent.appendChild(responsiveNavbarContent);
 };
 
-export default responsiveNavbar();
+export default sideBar();
