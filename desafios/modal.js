@@ -1,18 +1,18 @@
 const modal = () => {
   const mainContent = document.querySelector('main.main-content');
 
-  const responsiveNavbarContent = document.createElement('section');
+  const modalContent = document.createElement('section');
   const btn = document.createElement('button');
   const sideBar = document.createElement('aside');
   const modalBtn = document.createElement('button');
   const h2 = document.createElement('h2');
 
-  responsiveNavbarContent.id = 'modal';
-  responsiveNavbarContent.style.minHeight = '10rem';
-  responsiveNavbarContent.style.border = '1rem solid black';
-  responsiveNavbarContent.style.display = 'grid';
-  responsiveNavbarContent.style.placeContent = 'center';
-  responsiveNavbarContent.style.position = 'relative';
+  modalContent.id = 'modal';
+  modalContent.style.minHeight = '10rem';
+  modalContent.style.border = '1rem solid black';
+  modalContent.style.display = 'grid';
+  modalContent.style.placeContent = 'center';
+  modalContent.style.position = 'relative';
 
   btn.textContent = 'abrir modal';
   btn.style.textTransform = 'capitalize';
@@ -78,9 +78,9 @@ const modal = () => {
 
   sideBar.appendChild(h2);
   sideBar.appendChild(modalBtn);
-  responsiveNavbarContent.appendChild(btn);
-  responsiveNavbarContent.appendChild(sideBar);
-  mainContent.appendChild(responsiveNavbarContent);
+  modalContent.appendChild(btn);
+  modalContent.appendChild(sideBar);
+  mainContent.appendChild(modalContent);
 };
 
 export default modal();

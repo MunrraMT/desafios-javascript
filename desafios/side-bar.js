@@ -1,17 +1,17 @@
 const sideBar = () => {
   const mainContent = document.querySelector('main.main-content');
 
-  const responsiveNavbarContent = document.createElement('section');
+  const sideBarContent = document.createElement('section');
   const btn = document.createElement('button');
   const sideBar = document.createElement('aside');
   const h2 = document.createElement('h2');
 
-  responsiveNavbarContent.id = 'sidebar';
-  responsiveNavbarContent.style.minHeight = '10rem';
-  responsiveNavbarContent.style.border = '1rem solid black';
-  responsiveNavbarContent.style.display = 'grid';
-  responsiveNavbarContent.style.placeContent = 'center';
-  responsiveNavbarContent.style.position = 'relative';
+  sideBarContent.id = 'sidebar';
+  sideBarContent.style.minHeight = '10rem';
+  sideBarContent.style.border = '1rem solid black';
+  sideBarContent.style.display = 'grid';
+  sideBarContent.style.placeContent = 'center';
+  sideBarContent.style.position = 'relative';
 
   btn.textContent = 'Abrir SideBar';
   btn.style.cursor = 'pointer';
@@ -45,9 +45,9 @@ const sideBar = () => {
   });
 
   sideBar.appendChild(h2);
-  responsiveNavbarContent.appendChild(btn);
-  responsiveNavbarContent.appendChild(sideBar);
-  mainContent.appendChild(responsiveNavbarContent);
+  sideBarContent.appendChild(btn);
+  sideBarContent.appendChild(sideBar);
+  mainContent.appendChild(sideBarContent);
 };
 
 export default sideBar();
