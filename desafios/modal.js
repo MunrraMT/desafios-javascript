@@ -17,6 +17,7 @@ const modal = () => {
   btn.textContent = 'abrir modal';
   btn.style.textTransform = 'capitalize';
   btn.style.cursor = 'pointer';
+  btn.style.fontSize = '1.25rem';
 
   sideBar.style.position = 'absolute';
   sideBar.style.top = '50%';

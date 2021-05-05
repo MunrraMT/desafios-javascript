@@ -15,6 +15,7 @@ const sideBar = () => {
 
   btn.textContent = 'Abrir SideBar';
   btn.style.cursor = 'pointer';
+  btn.style.fontSize = '1.25rem';
 
   h2.textContent = 'SideBar';
   h2.style.textAlign = 'Center';

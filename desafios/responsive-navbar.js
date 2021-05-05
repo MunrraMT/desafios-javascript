@@ -11,9 +11,10 @@ const responsiveNavbar = () => {
   responsiveNavbarContent.style.display = 'grid';
   responsiveNavbarContent.style.placeContent = 'center';
 
-  btn.textContent = 'Abrir Título';
+  btn.textContent = 'Abrir NavBar';
   btn.style.display = 'block';
   btn.style.cursor = 'pointer';
+  btn.style.fontSize = '1.25rem';
 
   h2.textContent = 'Responsive Navbar';
   h2.style.textAlign = 'Center';
