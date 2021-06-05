@@ -53,7 +53,6 @@ const faq = () => {
     p.dataset.faqnumber = count;
     p.dataset.faqshow = 'close';
     p.style.height = 0;
-    p.style.transition = 'all 0.3s';
 
     section.appendChild(h3);
     section.appendChild(button);
